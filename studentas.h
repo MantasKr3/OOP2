@@ -8,13 +8,21 @@
 
 using std::vector;
 using std::string;
+class person
+{
+protected:
+  std::string vardas_;
+  std::string pavarde_;
 
-class studentas
+public:
+  virtual void set_vardas(std::string vardas) { vardas_ = vardas; }
+  virtual void set_pavarde(std::string pavarde) { pavarde_ = pavarde; }
+  std::string vardas() const { return vardas_; }
+  std::string pavarde() const { return pavarde_; }
+};
+class studentas : public person
 {
 private:
-//studento duomenys
-string vardas_;
-string pavarde_;
 vector <int> nd_;
 int egzaminas_;
 double mediana_;
@@ -24,8 +32,7 @@ public:
 //***rule of three
 studentas(){};//construtor'ius
 ~studentas(){};//destructor'ius
-
-studentas(const studentas &stud) //copy assignment operator'ius (=) (obj. kopijavimas)
+studentas(const studentas &stud) //obj copy asg
   {
     vardas_ = stud.vardas_;
     pavarde_ = stud.pavarde_;
@@ -35,8 +42,20 @@ studentas(const studentas &stud) //copy assignment operator'ius (=) (obj. kopija
     galb_ = stud.galb_;
   }
   //***rule of three
+//getters
+vector<int> nd() const {return nd_;}
+double mediana() const {return mediana_;}
+double galb() const {return galb_;}
+//setters
+void set_nd(vector<int> nd) {nd_ = nd;}
+void set_egzaminas(int egzaminas) {egzaminas_ = egzaminas;}
+void set_mediana(double mediana) {mediana_ = mediana;}
+void set_galb(double galb) {galb_ = galb;}
 
-  studentas operator=(studentas other)
+void median();
+void finalinis();
+
+studentas operator=(studentas other)
   {
     std::swap(vardas_, other.vardas_);
     std::swap(pavarde_, other.pavarde_);
@@ -46,23 +65,6 @@ studentas(const studentas &stud) //copy assignment operator'ius (=) (obj. kopija
     std::swap(galb_, other.galb_);
 
   }
-
-//getters
-string vardas() const {return vardas_;}
-string pavarde() const {return pavarde_;}
-vector<int> nd() const {return nd_;}
-double mediana() const {return mediana_;}
-double galb() const {return galb_;}
-//setters
-void set_vardas(string vardas) {vardas_ = vardas;}
-void set_pavarde(string pavarde) {pavarde_ = pavarde;}
-void set_nd(vector<int> nd) {nd_ = nd;}
-void set_egzaminas(int egzaminas) {egzaminas_ = egzaminas;}
-void set_mediana(double mediana) {mediana_ = mediana;}
-void set_galb(double galb) {galb_ = galb;}
-
-void median();
-void finalinis();
 
   friend std::ostream& operator<<(std::ostream& out, const studentas &stud) {
       out << stud.vardas_ << " " << stud.pavarde_ << " " << stud.galb_ << "\n";
@@ -88,6 +90,7 @@ void skaityti (vector <studentas> &x,int &kiekis);
 void sortas(vector <studentas> &x,int &kiekis);
 void print2(vector <studentas> &printable);
 bool number(string const& c);
-bool compare_m(studentas const & a, studentas const & b);
+
+
 
 #endif

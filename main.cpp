@@ -79,7 +79,6 @@ std::cout<<kiekis<< " studentu NUSKAITYMAS uztruko: "<<std::fixed<<std::setpreci
 
   
      start = std::chrono::high_resolution_clock::now();
-
   sortas(x,kiek);
  end = std::chrono::high_resolution_clock::now();
  diff = end-start; 
