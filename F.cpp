@@ -15,7 +15,8 @@ using std::vector;
 
 int Default_ND=5;
 
-bool compare_m(studentas const & a, studentas const & b) {
+bool compare_m(studentas const & a, studentas const & b)
+ {
    return a.galb() > b.galb();
 
 };
@@ -122,7 +123,7 @@ void sortas (vector <studentas> &x,int &kiekis)
     laikinas.set_mediana(median);
     studentai.push_back(laikinas);
     }
-      sort(studentai.begin(), studentai.end(), compare_m);
+    //sort(studentai.begin(), studentai.end(), compare_m);
 
 
        for(size_t i=0;i<kiekis;i++){
@@ -160,3 +161,4 @@ bool number(const std::string &c)
 
     return false;
 }
+

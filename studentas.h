@@ -21,6 +21,32 @@ double mediana_;
 double galb_;
 
 public:
+//***rule of three
+studentas(){};//construtor'ius
+~studentas(){};//destructor'ius
+
+studentas(const studentas &stud) //copy assignment operator'ius (=) (obj. kopijavimas)
+  {
+    vardas_ = stud.vardas_;
+    pavarde_ = stud.pavarde_;
+    nd_ = stud.nd_;
+    egzaminas_=stud.egzaminas_;
+    mediana_ = stud.mediana_;
+    galb_ = stud.galb_;
+  }
+  //***rule of three
+
+  studentas operator=(studentas other)
+  {
+    std::swap(vardas_, other.vardas_);
+    std::swap(pavarde_, other.pavarde_);
+    std::swap(nd_, other.nd_);
+    std::swap(egzaminas_, other.egzaminas_);
+    std::swap(mediana_, other.mediana_);
+    std::swap(galb_, other.galb_);
+
+  }
+
 //getters
 string vardas() const {return vardas_;}
 string pavarde() const {return pavarde_;}
@@ -38,6 +64,22 @@ void set_galb(double galb) {galb_ = galb;}
 void median();
 void finalinis();
 
+  friend std::ostream& operator<<(std::ostream& out, const studentas &stud) {
+      out << stud.vardas_ << " " << stud.pavarde_ << " " << stud.galb_ << "\n";
+      return out;
+    };
+    friend std::istream& operator>>(std::istream& in, studentas &stud) {
+      in >> stud.vardas_ >> stud.pavarde_ >> stud.galb_;
+    }
+
+  friend bool operator!=(studentas a, studentas b)
+  {
+    return !(a == b);
+  }
+  friend bool operator==(studentas a,studentas b)
+  {
+    return a == b;
+  }
 };
   
 
