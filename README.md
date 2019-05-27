@@ -47,7 +47,7 @@ or
 - `./main`
 
 ## Versijų istorija 
-
+ ### Klaida - RAND_MAX maksimalus studentu kiekis.
 ### [v2.0]() 
 
 - Sukurta dokumentacija naudojant Doxygen
