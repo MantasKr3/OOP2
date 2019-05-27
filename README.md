@@ -54,10 +54,10 @@ or
 - `./main`
 
 ## Versijų istorija 
-### [v2.0]() 
+### [v2.0](https://github.com/MantasKr3/OOP2/releases/tag/v2.0) 
 
 - Sukurta dokumentacija naudojant Doxygen
-- Pridėti unit testai
+- Pridėti unit testai galutiniam ir medianios patikrinimui
 
 ### [v1.5](https://github.com/MantasKr3/OOP2/releases/tag/v1.5) 
 
