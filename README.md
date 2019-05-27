@@ -6,7 +6,7 @@
 
 ## Programos naudojimas naudojant `g++` kompiliatorių
 
-- `git clone https://github.com/MantasKr3/vuobj`
+- `git clone https://github.com/MantasKr3/OOP2`
 - `cd OOP2` 
 - `g++  functions.cpp apdorojimas.cpp studentas.cpp  -o open` 
 - `./open`
