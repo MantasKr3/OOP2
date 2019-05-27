@@ -8,11 +8,11 @@
 
 - `git clone https://github.com/MantasKr3/OOP2`
 - `cd OOP2` 
-- `g++  functions.cpp apdorojimas.cpp studentas.cpp  -o open` 
-- `./open`
+- `g++  main.cpp F.cpp studentas.cpp  -o main` 
+- `./main
 
 or
-- `git clone https://github.com/MantasKr3/vuobj`
-- `cd vuobj`
+- `git clone https://github.com/MantasKr3/OOP2`
+- `cd OOP2`
 - `make`
-- `./open`
+- `./main`
