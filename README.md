@@ -9,7 +9,7 @@
 - `git clone https://github.com/MantasKr3/OOP2`
 - `cd OOP2` 
 - `g++  main.cpp F.cpp studentas.cpp  -o main` 
-- `./main
+- `./main`
 
 or
 - `git clone https://github.com/MantasKr3/OOP2`
