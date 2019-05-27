@@ -2,7 +2,7 @@
 ## Užduotis: 3 Užduotis
 
 **Dabartinės  versijos  panaudojimas. Programa seka ir apskaičiuoja moksleivio sugeneruotų pažymių vidurkį ir medianą:**<br/>
-- Pradėjus programa reikia vadovautis nurodymais console'je, galima generuoti norimą skaičių studentų, tada jų rezultatai išvedami į failus  pavadintus `neneaudeliai.txt` ir `geriukai.txt`,  galima studento duomenis pasirinktinai (galutinį/medianą) ir namų darbus įvesti ranka, rezultatai išvedami į ekraną.
+- Pradėjus programa reikia vadovautis nurodymais console'je, galima generuoti norimą skaičių studentų, tada jų rezultatai išvedami į failus  pavadintus `nenaudeliai.txt` ir `geriukai.txt`,  galima studento duomenis pasirinktinai (galutinį/medianą) ir namų darbus įvesti ranka, rezultatai išvedami į ekraną.
 
 ```shell
 Jei norite generuoti studentus įrašykite - 1, jei ne - 2 
