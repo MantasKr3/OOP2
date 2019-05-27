@@ -1,0 +1,39 @@
+\hypertarget{classperson}{}\section{person Class Reference}
+\label{classperson}\index{person@{person}}
+
+
+Inheritance diagram for person\+:
+% FIG 0
+
+
+Collaboration diagram for person\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classperson_a7c48c9551bde7a787e9c825f6d995651}\label{classperson_a7c48c9551bde7a787e9c825f6d995651}} 
+virtual void {\bfseries set\+\_\+vardas} (std\+::string vardas)
+\item 
+\mbox{\Hypertarget{classperson_a899dd0c27651911a55748fe060010edd}\label{classperson_a899dd0c27651911a55748fe060010edd}} 
+virtual void {\bfseries set\+\_\+pavarde} (std\+::string pavarde)
+\item 
+\mbox{\Hypertarget{classperson_ab59b0a98d377e02d372799e5616f7e2d}\label{classperson_ab59b0a98d377e02d372799e5616f7e2d}} 
+std\+::string {\bfseries vardas} () const
+\item 
+\mbox{\Hypertarget{classperson_a949cbfcef313fabef7b2e0e18c532254}\label{classperson_a949cbfcef313fabef7b2e0e18c532254}} 
+std\+::string {\bfseries pavarde} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classperson_a643161fc2f3f64ac4db8b6344a85172c}\label{classperson_a643161fc2f3f64ac4db8b6344a85172c}} 
+std\+::string {\bfseries vardas\+\_\+}
+\item 
+\mbox{\Hypertarget{classperson_a4d356b1456ebc791797d34ea5c1559e2}\label{classperson_a4d356b1456ebc791797d34ea5c1559e2}} 
+std\+::string {\bfseries pavarde\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+studentas.\+h\end{DoxyCompactItemize}
