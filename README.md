@@ -1,6 +1,13 @@
 # Manto Kraujelio VU Objektinio programavimo:
 ## Užduotis: 3 Užduotis
 
+ ### Klaida - v1.1, v1.2, v1.5  main.cpp 56 line turi būt
+ ```c++
+ if(number(kiekis)==false||std::stoi(kiekis)<=0) 
+ ```
+
+
+
 **Dabartinės  versijos  panaudojimas. Programa seka ir apskaičiuoja moksleivio sugeneruotų pažymių vidurkį ir medianą:**<br/>
 - Pradėjus programa reikia vadovautis nurodymais console'je, galima generuoti norimą skaičių studentų, tada jų rezultatai išvedami į failus  pavadintus `nenaudeliai.txt` ir `geriukai.txt`,  galima studento duomenis pasirinktinai (galutinį/medianą) ir namų darbus įvesti ranka, rezultatai išvedami į ekraną.
 
@@ -47,7 +54,6 @@ or
 - `./main`
 
 ## Versijų istorija 
- ### Klaida - RAND_MAX maksimalus studentu kiekis.
 ### [v2.0]() 
 
 - Sukurta dokumentacija naudojant Doxygen
